@@ -27,14 +27,14 @@ server.post('https://movieboot.herokuapp.com/webhook', (req, res) => {
                 return res.json({
                     speech: dataToSend,
                     displayText: dataToSend,
-                    source: 'get-movie-details'
+                    source: 'webhook'
                 });
             });
         }, (error) => {
             return res.json({
                 speech: 'Something went wrong!',
                 displayText: 'Something went wrong!',
-                source: 'get-movie-details'
+                source: 'webhook'
             });
         });
     });
