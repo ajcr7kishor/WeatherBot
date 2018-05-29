@@ -39,6 +39,6 @@ server.post('/get-movie-details', (req, res) => {
         });
     });
 
-    server.listen((process.env.PORT || 8000), () => {
+    server.listen((process.env.PORT || 5000), () => {
         console.log("Server is up and running...");
     });
